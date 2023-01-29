@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "93BE4554-36BB-42C9-B3DB-6FCE3852B812",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:..\/Package\/Module\/UI\/Resource",
+        "identifier" : "ResourceTests",
+        "name" : "ResourceTests"
+      }
+    }
+  ],
+  "version" : 1
+}

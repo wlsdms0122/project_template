@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "route",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/wlsdms0122/Route.git",
+      "state" : {
+        "revision" : "054ff1361f9012fd8d4ca73a37885419a497f138",
+        "version" : "1.1.0"
+      }
+    },
+    {
+      "identity" : "rvb",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/wlsdms0122/RVB.git",
+      "state" : {
+        "revision" : "f057eeb1a402c87322d48728dd2627a3e557965b",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

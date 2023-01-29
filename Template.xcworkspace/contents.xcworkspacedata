@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Package">
+      <FileRef
+         location = "group:Package/App">
+      </FileRef>
+      <FileRef
+         location = "group:Package/Remote">
+      </FileRef>
+      <Group
+         location = "container:"
+         name = "Feature">
+         <FileRef
+            location = "group:Package/Feature/Feature">
+         </FileRef>
+         <FileRef
+            location = "group:Package/Feature/Root">
+         </FileRef>
+         <FileRef
+            location = "group:Package/Feature/Launch">
+         </FileRef>
+         <FileRef
+            location = "group:Package/Feature/Main">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "Module">
+         <FileRef
+            location = "group:Package/Module/Module">
+         </FileRef>
+         <Group
+            location = "container:"
+            name = "UI">
+            <FileRef
+               location = "group:Package/Module/UI/Resource">
+            </FileRef>
+         </Group>
+      </Group>
+      <Group
+         location = "container:"
+         name = "Core">
+         <FileRef
+            location = "group:Package/Core/Core">
+         </FileRef>
+      </Group>
+   </Group>
+   <FileRef
+      location = "group:Application/Template.xcodeproj">
+   </FileRef>
+</Workspace>

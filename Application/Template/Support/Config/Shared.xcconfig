@@ -12,7 +12,7 @@
 // Product name
 PRODUCT_NAME = template
 // Accent color
-ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accentColor
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accent_color
 
 // MARK: - Projdct Setting
 // Base SDK

@@ -87,7 +87,7 @@ final class RootViewController: UINavigationController, RootControllable {
         completion?(launch)
     }
     
-    /// Present `SignedOut` module.
+    /// Present `Main` module.
     func presentMain(
         animated: Bool,
         force: Bool = true,

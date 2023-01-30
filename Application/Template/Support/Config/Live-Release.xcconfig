@@ -11,8 +11,6 @@
 #include "Shared.xcconfig"
 
 // MARK: - Basic Setting
-// Display name
-BUNDLE_DISPLAY_NAME = Template-Live
 // App icon name
 ASSETCATALOG_COMPILER_APPICON_NAME = appIcon_live
 
@@ -47,3 +45,7 @@ CODE_SIGN_STYLE = Manual
 CODE_SIGN_IDENTITY = Apple Distribution
 // Probisioning profile specifier
 PROVISIONING_PROFILE_SPECIFIER = Template Live Ad hoc
+
+// MARK: - User Define
+// Display name
+BUNDLE_DISPLAY_NAME = Template-Live

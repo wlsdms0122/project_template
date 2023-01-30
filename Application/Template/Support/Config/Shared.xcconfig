@@ -9,15 +9,20 @@
 // https://help.apple.com/xcode/#/dev745c5c974
 
 // MARK: - Basic Setting
+// Product name
+PRODUCT_NAME = template
+// Accent color
+ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accentColor
+
+// MARK: - Projdct Setting
 // Base SDK
 SDKROOT = iphoneos
 // Deployment target(iOS)
 IPHONEOS_DEPLOYMENT_TARGET = 15.0
-
 // Version
 MARKETING_VERSION = 1.0.0
 //Build number
 CURRENT_PROJECT_VERSION = 1
 
-// Accent color
-ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accentColor
+// MARK: - Build Setting
+SWIFT_VERSION = 5

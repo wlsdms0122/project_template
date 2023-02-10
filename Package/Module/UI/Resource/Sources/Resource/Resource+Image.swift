@@ -7,8 +7,10 @@
 
 import UIKit
 
-extension Resource {
-    public enum Image {
-        
-    }
+public extension Resource {
+    enum Image { }
+}
+
+public extension Resource.Image {
+    
 }

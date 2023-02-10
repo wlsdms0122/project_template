@@ -7,8 +7,10 @@
 
 import Foundation
 
-extension Resource {
-    public enum Localizable {
-        public static var appName: String { "app_name".localized }
-    }
+public extension Resource {
+    enum Localizable { }
+}
+
+public extension Resource.Localizable {
+    static var appName: String { "app_name".localized }
 }

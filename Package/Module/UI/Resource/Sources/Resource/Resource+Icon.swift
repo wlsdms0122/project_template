@@ -7,8 +7,10 @@
 
 import UIKit
 
-extension Resource {
-    public enum Icon {
-        
-    }
+public extension Resource {
+    enum Icon { }
+}
+
+public extension Resource.Icon {
+    
 }

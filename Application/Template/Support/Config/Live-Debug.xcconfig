@@ -42,7 +42,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG LIVE
 // Code sign style
 CODE_SIGN_STYLE = Manual
 // Code sign identifier
-CODE_SIGN_IDENTITY = Apple Developer
+CODE_SIGN_IDENTITY = Apple Development
 // Probisioning profile specifier
 PROVISIONING_PROFILE_SPECIFIER = Wildcard Develop
 

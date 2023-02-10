@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/wlsdms0122/RVB.git",
       "state" : {
-        "revision" : "f057eeb1a402c87322d48728dd2627a3e557965b",
-        "version" : "1.0.1"
+        "revision" : "b042a120eec876a7d770ef3c19a6d7e5431b9352",
+        "version" : "1.1.0"
       }
     }
   ],

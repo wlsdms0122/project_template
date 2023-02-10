@@ -36,6 +36,9 @@
             location = "container:"
             name = "UI">
             <FileRef
+               location = "group:Package/Module/UI/CUIKit">
+            </FileRef>
+            <FileRef
                location = "group:Package/Module/UI/Resource">
             </FileRef>
          </Group>

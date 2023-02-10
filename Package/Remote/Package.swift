@@ -15,7 +15,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/wlsdms0122/RVB.git", exact: "1.0.1"),
+        .package(url: "https://github.com/wlsdms0122/RVB.git", exact: "1.1.0"),
         .package(url: "https://github.com/wlsdms0122/Route.git", exact: "1.1.0")
     ],
     targets: [

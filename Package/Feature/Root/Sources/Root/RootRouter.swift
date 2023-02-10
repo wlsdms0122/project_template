@@ -10,9 +10,9 @@ import Launch
 import Main
 
 protocol RootRoutable: Routable {
-    /// Build launch module to route from root.
+    /// Build `launch` module for routing.
     func routeToLaunch(with parameter: LaunchParameter) -> LaunchControllable
-    /// Build main module to route from root.
+    /// Build `main` module for routing.
     func routeToMain(with parameter: MainParameter) -> MainControllable
 }
 

@@ -9,14 +9,12 @@ import RVB
 import Root
 
 protocol AppRoutable: Routable {
-    /// Route to the `Root` module.
+    /// Build `Root` module for routing.
     func routeToRoot(with parameter: RootParameter) -> any RootControllable
 }
 
 final class AppRouter: AppRoutable {
     // MARK: - Property
-    
-    // MARK: - Builder
     private let rootBuilder: any RootBuildable
     
     // MARK: - Initializer
@@ -24,8 +22,10 @@ final class AppRouter: AppRoutable {
         self.rootBuilder = rootBuilder
     }
     
-    // MARK: - Route
+    // MARK: - Public
     func routeToRoot(with parameter: RootParameter) -> any RootControllable {
         rootBuilder.build(with: parameter)
     }
+    
+    // MARK: - Private
 }

@@ -8,44 +8,19 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-#include "Shared.xcconfig"
+#include "Shared/Shared-Debug.xcconfig"
 
-// MARK: - Basic Setting
+// MARK: - Project Setting
 // App icon name
 ASSETCATALOG_COMPILER_APPICON_NAME = app_icon_live
 
-// MARK: - Project Setting
-// Info plist file path
-INFOPLIST_FILE = $(PROJECT_NAME)/Support/Info.plist
-// Bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.jsilver.template-live
-
 // MARK: - Build Setting
-// Validate built product
-VALIDATE_PRODUCT = NO
-// Build only activate architecture
-ONLY_ACTIVE_ARCH = YES
-// Debug symbol
-DEBUG_INFORMATION_FORMAT = dwarf
-// Testability
-ENABLE_TESTABILITY = YES
-// GCC optimization level
-GCC_OPTIMIZATION_LEVEL = 0
-// Swift complication mode
-SWIFT_COMPILATION_MODE = singlefile
-// Swift optimization level
-SWIFT_OPTIMIZATION_LEVEL = -Onone
 // swift complication conditions
-SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG LIVE
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = ${SWIFT_ACTIVE_COMPILATION_CONDITIONS} LIVE
 
 // MARK: - Code Sign
-// Code sign style
-CODE_SIGN_STYLE = Manual
-// Code sign identifier
-CODE_SIGN_IDENTITY = Apple Development
-// Probisioning profile specifier
-PROVISIONING_PROFILE_SPECIFIER = Wildcard Develop
 
 // MARK: - User Define
 // Display name
-BUNDLE_DISPLAY_NAME = Template-Live
+BUNDLE_DISPLAY_NAME = $(TEMPLATE_NAME)(Live)
+

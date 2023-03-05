@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F389A9A029B4F21C00E06349 /* Preview Content.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F389A99F29B4F21C00E06349 /* Preview Content.xcassets */; };
 		F38F050C29850A410010B330 /* App in Frameworks */ = {isa = PBXBuildFile; productRef = F38F050B29850A410010B330 /* App */; };
 		F3F1310B2984FCC3001AD473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F1310A2984FCC3001AD473 /* AppDelegate.swift */; };
 		F3F1310D2984FCC3001AD473 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F1310C2984FCC3001AD473 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 		F348C33729B4EF8F00DFB1C9 /* Shared-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Shared-Debug.xcconfig"; sourceTree = "<group>"; };
 		F348C33829B4EF9700DFB1C9 /* Shared-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Shared-Release.xcconfig"; sourceTree = "<group>"; };
 		F3F131072984FCC3001AD473 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F389A99F29B4F21C00E06349 /* Preview Content.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Content.xcassets"; sourceTree = "<group>"; };
 		F3F1310A2984FCC3001AD473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3F1310C2984FCC3001AD473 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F3F131132984FCC4001AD473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				F3F131132984FCC4001AD473 /* Assets.xcassets */,
+				F389A99F29B4F21C00E06349 /* Preview Content.xcassets */,
 				F3F131152984FCC4001AD473 /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F131172984FCC4001AD473 /* LaunchScreen.storyboard in Resources */,
+				F389A9A029B4F21C00E06349 /* Preview Content.xcassets in Resources */,
 				F3F131142984FCC4001AD473 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

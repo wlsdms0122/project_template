@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "Resource",
-    defaultLocalization: "ko",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v15)
     ],
@@ -16,13 +16,13 @@ let package = Package(
         )
     ],
     dependencies: [
-        
+        .package(path: "../DesignSystem")
     ],
     targets: [
         .target(
             name: "Resource",
             dependencies: [
-                
+                "DesignSystem"
             ]
         ),
         .testTarget(

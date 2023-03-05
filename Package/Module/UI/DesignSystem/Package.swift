@@ -4,24 +4,25 @@
 import PackageDescription
 
 let package = Package(
-    name: "CUIKit",
+    name: "DesignSystem",
+    defaultLocalization: "en",
     platforms: [
         .iOS(.v15)
     ],
     products: [
         .library(
-            name: "CUIKit",
-            targets: ["CUIKit"]
+            name: "DesignSystem",
+            targets: ["DesignSystem"]
         )
     ],
     dependencies: [
-        .package(path: "../Resource")
+        
     ],
     targets: [
         .target(
-            name: "CUIKit",
+            name: "DesignSystem",
             dependencies: [
-                "Resource"
+                
             ]
         )
     ]

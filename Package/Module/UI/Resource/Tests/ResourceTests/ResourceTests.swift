@@ -18,8 +18,6 @@ final class ResourceTests: XCTestCase {
         // Given
         
         // When
-        _ = R.Color.white
-        _ = R.Color.black
         
         // Then
     }

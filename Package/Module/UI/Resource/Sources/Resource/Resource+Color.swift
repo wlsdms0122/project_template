@@ -12,6 +12,5 @@ public extension Resource {
 }
 
 public extension Resource.Color {
-    static var white: UIColor { UIColor(named: "white", in: .module, compatibleWith: nil)! }
-    static var black: UIColor { UIColor(named: "black", in: .module, compatibleWith: nil)! }
+    
 }

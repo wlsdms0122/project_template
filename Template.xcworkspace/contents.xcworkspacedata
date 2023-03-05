@@ -36,7 +36,7 @@
             location = "container:"
             name = "UI">
             <FileRef
-               location = "group:Package/Module/UI/CUIKit">
+               location = "group:Package/Module/UI/DesignSystem">
             </FileRef>
             <FileRef
                location = "group:Package/Module/UI/Resource">

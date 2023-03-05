@@ -6,4 +6,4 @@
   
 */
 
-"app_name" = "Template";
+"app_name" = "$(TEMPLATE_NAME)";

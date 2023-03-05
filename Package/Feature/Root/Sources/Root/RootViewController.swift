@@ -61,30 +61,19 @@ final class RootViewController: UINavigationController, RootControllable {
         force: Bool = true,
         completion: ((LaunchControllable) -> Void)? = nil
     ) {
-        if let launch = search(where: { $0 is LaunchControllable })
-            .last as? LaunchControllable {
-            guard force else {
-                completion?(launch)
-                return
-            }
-            
-            route(launch, animated: animated) { _ in
-                completion?(launch)
-            }
-            return
-        }
-        
-        guard let launch = router?.routeToLaunch(
-            with: .init()
-        )
+        guard let launch = router?.routeToLaunch(with: .init())
         else { return }
         
         launch.delegate = self
         
         delegate = launch
         
-        viewControllers = [launch]
-        completion?(launch)
+        route(to: self, animated: true) {
+            $0?.setViewControllers(
+                [launch],
+                animated: animated
+            )
+        }
     }
     
     /// Present `Main` module.
@@ -93,26 +82,14 @@ final class RootViewController: UINavigationController, RootControllable {
         force: Bool = true,
         completion: ((MainControllable) -> Void)? = nil
     ) {
-        if let main = search(where: { $0 is MainControllable })
-            .last as? MainControllable {
-            guard force else {
-                completion?(main)
-                return
-            }
-            
-            route(main, animated: animated) { _ in
-                completion?(main)
-            }
-            return
+        guard let main = router?.routeToMain(with: .init()) else { return }
+        
+        route(to: self, animated: true) {
+            $0?.setViewControllers(
+                [main],
+                animated: animated
+            )
         }
-        
-        guard let main = router?.routeToMain(
-            with: .init()
-        )
-        else { return }
-        
-        setViewControllers([main], animated: true)
-        completion?(main)
     }
 }
 

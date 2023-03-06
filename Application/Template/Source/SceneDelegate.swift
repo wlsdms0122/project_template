@@ -10,9 +10,11 @@ import App
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // MARK: - Property
-    private var window: UIWindow? { app?.window }
+    var window: UIWindow?
     
-    private var app: AppControllable?
+    private var app: (any AppControllable)? {
+        (UIApplication.shared.delegate as? AppDelegate)?.app
+    }
     
     // MARK: - Lifecycle
     func scene(
@@ -20,11 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        let app = AppBuilder(.init())
-            .build(with: .init())
-        self.app = app
-        
-        app.scene(scene, willConnectTo: session, options: connectionOptions)        
+        window = app?.scene(scene, willConnectTo: session, options: connectionOptions)
     }
     
     // MARK: - Public

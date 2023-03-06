@@ -29,9 +29,6 @@
       <Group
          location = "container:"
          name = "Module">
-         <FileRef
-            location = "group:Package/Module/Module">
-         </FileRef>
          <Group
             location = "container:"
             name = "UI">
@@ -42,12 +39,28 @@
                location = "group:Package/Module/UI/Resource">
             </FileRef>
          </Group>
+         <Group
+            location = "container:"
+            name = "Service">
+            <FileRef
+               location = "group:Package/Module/Service/Service">
+            </FileRef>
+         </Group>
+         <FileRef
+            location = "group:Package/Module/API">
+         </FileRef>
+         <FileRef
+            location = "group:Package/Module/Store">
+         </FileRef>
+         <FileRef
+            location = "group:Package/Module/Environment">
+         </FileRef>
       </Group>
       <Group
          location = "container:"
          name = "Core">
          <FileRef
-            location = "group:Package/Core/Core">
+            location = "group:Package/Core/Util">
          </FileRef>
       </Group>
    </Group>

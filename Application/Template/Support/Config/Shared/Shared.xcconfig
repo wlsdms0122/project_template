@@ -10,7 +10,7 @@
 
 // MARK: - Projdct Setting
 // Product name
-PRODUCT_NAME = $(TEMPLATE)
+PRODUCT_NAME = _TEMPLATE_
 // Info plist file path
 INFOPLIST_FILE = $(PROJECT_NAME)/Support/Info.plist
 // Development asset path
@@ -18,7 +18,7 @@ DEVELOPMENT_ASSET_PATHS = ${PROJECT_NAME}/Resource/Preview\ Content.xcassets
 // Accent color
 ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accent_color
 // Bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.chaltteok-studio.$(TEMPLATE)
+PRODUCT_BUNDLE_IDENTIFIER = com.chaltteok-studio._TEMPLATE_
 // Version
 MARKETING_VERSION = 1.0.0
 //Build number
@@ -42,4 +42,4 @@ CODE_SIGN_STYLE = Manual
 
 // MARK: - User Define
 // URL scheme
-URL_SCHEME = $(TEMPLATE)
+URL_SCHEME = _TEMPLATE_

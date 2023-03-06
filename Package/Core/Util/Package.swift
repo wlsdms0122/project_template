@@ -4,14 +4,14 @@
 import PackageDescription
 
 let package = Package(
-    name: "Module",
+    name: "Util",
     platforms: [
         .iOS(.v15)
     ],
     products: [
         .library(
-            name: "Module",
-            targets: ["Module"]
+            name: "Util",
+            targets: ["Util"]
         )
     ],
     dependencies: [
@@ -19,7 +19,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Module",
+            name: "Util",
             dependencies: [
                 
             ]

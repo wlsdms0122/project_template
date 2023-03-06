@@ -21,8 +21,8 @@
 		F31E54AA2986C47B00D6E78F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F348C33729B4EF8F00DFB1C9 /* Shared-Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Shared-Debug.xcconfig"; sourceTree = "<group>"; };
 		F348C33829B4EF9700DFB1C9 /* Shared-Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Shared-Release.xcconfig"; sourceTree = "<group>"; };
-		F3F131072984FCC3001AD473 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F389A99F29B4F21C00E06349 /* Preview Content.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Content.xcassets"; sourceTree = "<group>"; };
+		F3F131072984FCC3001AD473 /* _TEMPLATE_.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = _TEMPLATE_.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F1310A2984FCC3001AD473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F3F1310C2984FCC3001AD473 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F3F131132984FCC4001AD473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 		F3F131082984FCC3001AD473 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F3F131072984FCC3001AD473 /* .app */,
+				F3F131072984FCC3001AD473 /* _TEMPLATE_.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 				F38F050B29850A410010B330 /* App */,
 			);
 			productName = template;
-			productReference = F3F131072984FCC3001AD473 /* .app */;
+			productReference = F3F131072984FCC3001AD473 /* _TEMPLATE_.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */

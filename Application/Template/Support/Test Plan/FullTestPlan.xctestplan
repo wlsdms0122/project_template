@@ -12,14 +12,7 @@
     "testTimeoutsEnabled" : true
   },
   "testTargets" : [
-    {
-      "parallelizable" : true,
-      "target" : {
-        "containerPath" : "container:..\/Package\/Module\/UI\/Resource",
-        "identifier" : "ResourceTests",
-        "name" : "ResourceTests"
-      }
-    }
+
   ],
   "version" : 1
 }

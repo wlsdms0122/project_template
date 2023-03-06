@@ -34,4 +34,4 @@ CODE_SIGN_STYLE = Manual
 // Code sign identifier
 CODE_SIGN_IDENTITY = Apple Distribution
 // Probisioning profile specifier
-PROVISIONING_PROFILE_SPECIFIER = $(TEMPLATE_NAME) Ad Hoc
+PROVISIONING_PROFILE_SPECIFIER = _TEMPLATE_NAME_ Ad Hoc

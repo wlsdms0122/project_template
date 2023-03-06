@@ -20,8 +20,6 @@ let package = Package(
         .package(url: "https://github.com/wlsdms0122/Logger.git", .upToNextMajor(from: "1.0.0")),
         .package(url: "https://github.com/wlsdms0122/Route.git", .upToNextMajor(from: "1.3.0")),
         .package(url: "https://github.com/wlsdms0122/Deeplinker.git", .upToNextMajor(from: "1.1.1")),
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.5.0")),
-        .package(url: "https://github.com/ReactorKit/ReactorKit.git", .upToNextMajor(from: "3.2.0")),
         .package(path: "../../Module/UI/Resource")
     ],
     targets: [
@@ -33,9 +31,6 @@ let package = Package(
                 "Logger",
                 "Route",
                 "Deeplinker",
-                "RxSwift",
-                .product(name: "RxCocoa", package: "RxSwift"),
-                "ReactorKit",
                 "Resource"
             ]
         )

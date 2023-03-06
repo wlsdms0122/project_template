@@ -15,12 +15,16 @@ let package = Package(
         )
     ],
     dependencies: [
+        .package(url: "https://github.com/wlsdms0122/Logger.git", .upToNextMajor(from: "1.0.0")),
+        .package(path: "../Module/Environment"),
         .package(path: "../Feature/Root")
     ],
     targets: [
         .target(
             name: "App",
             dependencies: [
+                "Logger",
+                "Environment",
                 "Root"
             ]
         )

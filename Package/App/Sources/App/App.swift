@@ -7,19 +7,17 @@
 
 import UIKit
 import RVB
+import Logger
+import Environment
 
 public protocol AppControllable: AnyObject, Controllable {
-    var window: UIWindow? { get }
-    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool
-    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions)
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) -> UIWindow?
 }
 
 final class App: AppControllable {
     // MARK: - Property
-    var window: UIWindow?
-    
-    var router: any AppRoutable
+    private var router: any AppRoutable
     
     // MARK: - Initializer
     init(router: any AppRoutable) {
@@ -27,10 +25,9 @@ final class App: AppControllable {
     }
     
     // MARK: - Lifecycle
-    func application(
-        _ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
-    ) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        setUpApplication()
+        
         return true
     }
     
@@ -38,8 +35,8 @@ final class App: AppControllable {
         _ scene: UIScene,
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
-    ) {
-        guard let windowScene = (scene as? UIWindowScene) else { return }
+    ) -> UIWindow? {
+        guard let windowScene = (scene as? UIWindowScene) else { return nil }
         
         let root = router.routeToRoot(with: .init())
         
@@ -47,10 +44,18 @@ final class App: AppControllable {
         window.rootViewController = root
         window.makeKeyAndVisible()
         
-        self.window = window
+        return window
     }
     
     // MARK: - Public
     
     // MARK: - Private
+    private func setUpApplication() {
+        setUpLogger()
+    }
+    
+    private func setUpLogger() {
+        guard Env.config != .deploy else { return }
+        Logger.configure([ConsolePrinter()])
+    }
 }

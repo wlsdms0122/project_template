@@ -56,7 +56,7 @@ final class LaunchView: UIView {
     }
     
     private func setUpState() {
-        backgroundColor = R.Color.white
+        backgroundColor = .white
     }
     
     private func setUpAction() {

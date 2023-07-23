@@ -9,12 +9,7 @@ import RVB
 import Launch
 import Main
 
-public struct RootDependency {
-    // MARK: - Property
-    
-    // MARK: - Initializer
-    public init() { }
-}
+public protocol RootDependency: LaunchDependency, MainDependency { }
 
 public struct RootParameter {
     // MARK: - Property
@@ -29,16 +24,13 @@ public protocol RootBuildable: Buildable {
 
 public final class RootBuilder: Builder<RootDependency>, RootBuildable {
     public func build(with parameter: RootParameter) -> RootControllable {
-        let launchBuilder = LaunchBuilder(.init())
-        let mainBuilder = MainBuilder(.init())
-        
-        let viewController = RootViewController()
         let router = RootRouter(
-            launchBuilder: launchBuilder,
-            mainBuilder: mainBuilder
+            launchBuilder: LaunchBuilder(dependency),
+            mainBuilder: MainBuilder(dependency)
         )
-        
-        viewController.router = router
+        let viewController = RootViewController(
+            router: router
+        )
         
         return viewController
     }

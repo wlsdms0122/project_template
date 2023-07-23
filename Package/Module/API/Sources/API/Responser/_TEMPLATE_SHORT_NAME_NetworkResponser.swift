@@ -1,55 +1,43 @@
 //
-//  _TEMPLATE_SHORT_NAME_NetworkResponser.swift
-//  
+//  _TEMPLATE_SHORT_NAME_Responser.swift
 //
-//  Created by jsilver on 2022/01/31.
+//
+//  Created by JSilver on 2022/07/18.
 //
 
 import Foundation
-import Network
+import Dyson
 
-public final class _TEMPLATE_SHORT_NAME_NetworkResponser: NetworkResponser {
+public struct _TEMPLATE_SHORT_NAME_Responser: Responser {
     // MARK: - Property
-    public let provider: any NetworkProvider
     
     // MARK: - Initializer
-    public init(provider: any NetworkProvider) {
-        self.provider = provider
-    }
+    public init() { }
     
     // MARK: - Lifecycle
-    public func response<T: Target>(
-        target: T,
-        result: Response,
-        handler: (Result<T.Result, Error>) -> Void
-    ) {
-        switch result {
+    public func response<S: Spec>(
+        _ response: Result<(Data, URLResponse), any Error>,
+        spec: S
+    ) throws -> S.Result {
+        switch response {
         case let .success((data, response)):
             guard let response = response as? HTTPURLResponse else {
-                handler(.failure(_TEMPLATE_SHORT_NAME_NetworkError.emptyResponse))
-                return
+                throw _TEMPLATE_SHORT_NAME_NetworkError.emptyResponse
             }
             
             guard (200..<300).contains(response.statusCode) else {
-                handler(.failure(_TEMPLATE_SHORT_NAME_NetworkError.invalidStatusCode(response.statusCode)))
-                return
+                throw _TEMPLATE_SHORT_NAME_NetworkError.invalidStatusCode(response.statusCode)
             }
             
-            do {
-                let error = try target.error.map(data)
-                handler(.failure(error))
-                
-            } catch {
-                do {
-                    let result = try target.result.map(data)
-                    handler(.success(result))
-                } catch {
-                    handler(.failure(error))
-                }
+            let error = try? spec.error.map(data)
+            if let error {
+                throw error
             }
+            
+            return try spec.result.map(data)
             
         case let .failure(error):
-            handler(.failure(error))
+            throw error
         }
     }
     

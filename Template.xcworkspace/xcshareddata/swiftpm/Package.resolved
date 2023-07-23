@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/wlsdms0122/Compose.git",
       "state" : {
-        "revision" : "6841f603b3bae0e9cbf66e684a220463248841b7",
-        "version" : "1.2.1"
+        "revision" : "7faab8d6adc1d080636defb47f7da8c7614c5e07",
+        "version" : "1.5.0"
       }
     },
     {
@@ -19,12 +19,21 @@
       }
     },
     {
-      "identity" : "logger",
+      "identity" : "dyson",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/wlsdms0122/Logger.git",
+      "location" : "https://github.com/wlsdms0122/Dyson.git",
       "state" : {
-        "revision" : "947b5caf794d61de831724c4170934d3a54e86ba",
-        "version" : "1.0.0"
+        "revision" : "c6b482d4974c2ece9d6c0d577eb487b9ff98e014",
+        "version" : "2.0.0"
+      }
+    },
+    {
+      "identity" : "logma",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/wlsdms0122/Logma.git",
+      "state" : {
+        "revision" : "7b8a6227b7cf4e9ce6398cab9c11d04f5bcca51a",
+        "version" : "1.2.0"
       }
     },
     {
@@ -32,17 +41,17 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/airbnb/lottie-ios.git",
       "state" : {
-        "revision" : "440a6eebb8a8ae9c773e9a3e21021b72a74ffbb7",
-        "version" : "4.1.2"
+        "revision" : "d6feea26a370019b4d3a85f5984cb95a2734776f",
+        "version" : "4.2.0"
       }
     },
     {
-      "identity" : "network",
+      "identity" : "reducer",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/wlsdms0122/Network.git",
+      "location" : "https://github.com/wlsdms0122/Reducer.git",
       "state" : {
-        "revision" : "6f14f168de208b60a3ce99589e936d808527136d",
-        "version" : "1.1.0"
+        "revision" : "f66940c11b70118a04bc139fd8f77e59dab0f6fd",
+        "version" : "1.3.1"
       }
     },
     {
@@ -64,21 +73,12 @@
       }
     },
     {
-      "identity" : "rxswift",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/ReactiveX/RxSwift.git",
-      "state" : {
-        "revision" : "b4307ba0b6425c0ba4178e138799946c3da594f8",
-        "version" : "6.5.0"
-      }
-    },
-    {
       "identity" : "storage",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/wlsdms0122/Storage.git",
       "state" : {
-        "revision" : "f85374fc5109095df5b4bac0531ae0db1520d942",
-        "version" : "1.0.1"
+        "revision" : "68fe51f0ca512e7358c7a600104224c84c637700",
+        "version" : "1.0.2"
       }
     }
   ],

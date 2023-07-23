@@ -19,10 +19,19 @@ final class RootViewController: UINavigationController, RootControllable {
     // MARK: - View
 
     // MARK: - Property
-    var router: (any RootRoutable)?
+    private let router: any RootRoutable
     
     // MARK: - Initializer
-
+    init(router: any RootRoutable) {
+        self.router = router
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,8 +70,7 @@ final class RootViewController: UINavigationController, RootControllable {
         force: Bool = true,
         completion: ((LaunchControllable) -> Void)? = nil
     ) {
-        guard let launch = router?.routeToLaunch(with: .init())
-        else { return }
+        let launch = router.routeToLaunch(with: .init())
         
         launch.delegate = self
         
@@ -82,7 +90,7 @@ final class RootViewController: UINavigationController, RootControllable {
         force: Bool = true,
         completion: ((MainControllable) -> Void)? = nil
     ) {
-        guard let main = router?.routeToMain(with: .init()) else { return }
+        let main = router.routeToMain(with: .init())
         
         route(to: self, animated: true) {
             $0?.setViewControllers(

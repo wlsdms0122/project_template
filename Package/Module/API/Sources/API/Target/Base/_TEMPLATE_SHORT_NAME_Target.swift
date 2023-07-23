@@ -2,15 +2,15 @@
 //  _TEMPLATE_SHORT_NAME_Target.swift
 //  
 //
-//  Created by jsilver on 2022/02/02.
+//  Created by JSilver on 2022/02/02.
 //
 
-import Network
+import Dyson
 import Environment
 
-public protocol _TEMPLATE_SHORT_NAME_Target: Target, Authorizable { }
+public protocol _TEMPLATE_SHORT_NAME_Spec: Spec, Authorizable { }
 
-public extension _TEMPLATE_SHORT_NAME_Target {
+public extension _TEMPLATE_SHORT_NAME_Spec {
     var baseURL: String { Env.URL.baseURL }
     var headers: HTTPHeaders { [:] }
     

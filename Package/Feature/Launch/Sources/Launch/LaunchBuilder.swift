@@ -7,12 +7,7 @@
 
 import RVB
 
-public struct LaunchDependency {
-    // MARK: - Property
-    
-    // MARK: - Initializer
-    public init() { }
-}
+public protocol LaunchDependency { }
 
 public struct LaunchParameter {
     // MARK: - Property
@@ -27,11 +22,10 @@ public protocol LaunchBuildable: Buildable {
 
 public final class LaunchBuilder: Builder<LaunchDependency>, LaunchBuildable {
     public func build(with parameter: LaunchParameter) -> LaunchControllable {
-        let viewController = LaunchViewController()
         let router = LaunchRouter()
-        
-        // DI
-        viewController.router = router
+        let viewController = LaunchViewController(
+            router: router
+        )
         
         return viewController
     }

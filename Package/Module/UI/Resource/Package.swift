@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.8
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -15,15 +15,11 @@ let package = Package(
             targets: ["Resource"]
         )
     ],
-    dependencies: [
-        .package(path: "../DesignSystem")
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "Resource",
-            dependencies: [
-                "DesignSystem"
-            ]
+            dependencies: []
         ),
         .testTarget(
             name: "ResourceTests",

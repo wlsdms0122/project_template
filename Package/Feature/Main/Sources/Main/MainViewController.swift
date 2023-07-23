@@ -17,10 +17,19 @@ final class MainViewController: UIViewController, MainControllable {
     private let root = MainView()
 
     // MARK: - Property
-    var router: MainRoutable?
+    private let  router: any MainRoutable
 
     // MARK: - Initializer
-
+    init(router: any MainRoutable) {
+        self.router = router
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - Lifecycle
     override func loadView() {
         view = root

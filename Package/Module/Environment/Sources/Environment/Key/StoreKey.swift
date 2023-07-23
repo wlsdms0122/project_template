@@ -1,17 +1,13 @@
 //
-//  Environment+Key.swift
+//  StoreKey.swift
 //  
 //
-//  Created by JSilver on 2023/02/16.
+//  Created by JSilver on 2023/07/23.
 //
 
 import Foundation
 
 public typealias StoreKey = Environment.Key.Store
-
-public extension Environment {
-    enum Key { }
-}
 
 public extension Environment.Key {
     struct Store: Decodable, Equatable {

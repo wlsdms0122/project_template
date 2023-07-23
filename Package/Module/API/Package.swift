@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.8
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -15,16 +15,16 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/wlsdms0122/Logger.git", .upToNextMajor(from: "1.0.0")),
-        .package(url: "https://github.com/wlsdms0122/Network.git", .upToNextMajor(from: "1.1.0")),
+        .package(url: "https://github.com/wlsdms0122/Logma.git", .upToNextMajor(from: "1.2.0")),
+        .package(url: "https://github.com/wlsdms0122/Dyson.git", .upToNextMajor(from: "2.0.0")),
         .package(path: "../Environment")
     ],
     targets: [
         .target(
             name: "API",
             dependencies: [
-                "Logger",
-                "Network",
+                "Logma",
+                "Dyson",
                 "Environment"
             ]
         ),

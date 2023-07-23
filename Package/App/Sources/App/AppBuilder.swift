@@ -8,7 +8,7 @@
 import RVB
 import Root
 
-public struct AppDependency {
+public struct AppDependency: RootDependency {
     // MARK: - Property
     
     // MARK: - Initializer
@@ -28,10 +28,8 @@ public protocol AppBuildable: Buildable {
 
 public final class AppBuilder: Builder<AppDependency>, AppBuildable {
     public func build(with parameter: AppParameter) -> AppControllable {
-        let rootBuilder = RootBuilder(.init())
-        
         let router = AppRouter(
-            rootBuilder: rootBuilder
+            rootBuilder: RootBuilder(dependency)
         )
         let app = App(router: router)
         

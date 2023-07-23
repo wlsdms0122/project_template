@@ -7,7 +7,7 @@
 
 import UIKit
 import RVB
-import Logger
+import Logma
 import Environment
 
 public protocol AppControllable: AnyObject, Controllable {
@@ -51,11 +51,11 @@ final class App: AppControllable {
     
     // MARK: - Private
     private func setUpApplication() {
-        setUpLogger()
+        setUpLogma()
     }
     
-    private func setUpLogger() {
+    private func setUpLogma() {
         guard Env.config != .deploy else { return }
-        Logger.configure([ConsolePrinter()])
+        Logma.configure([ConsolePrinter()])
     }
 }

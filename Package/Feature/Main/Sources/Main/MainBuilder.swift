@@ -7,12 +7,7 @@
 
 import RVB
 
-public struct MainDependency {
-    // MARK: - Property
-    
-    // MARK: - Initializer
-    public init() { }
-}
+public protocol MainDependency { }
 
 public struct MainParameter {
     // MARK: - Property
@@ -27,11 +22,10 @@ public protocol MainBuildable: Buildable {
 
 public final class MainBuilder: Builder<MainDependency>, MainBuildable {
     public func build(with parameter: MainParameter) -> MainControllable {
-        let viewController = MainViewController()
         let router = MainRouter()
-        
-        // DI
-        viewController.router = router
+        let viewController = MainViewController(
+            router: router
+        )
         
         return viewController
     }

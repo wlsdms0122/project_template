@@ -21,12 +21,21 @@ final class LaunchViewController: UIViewController, LaunchControllable {
     private let root = LaunchView()
 
     // MARK: - Property
-    var router: LaunchRoutable?
+    private let router: any LaunchRoutable
     
     weak var delegate: LaunchDelegate?
 
     // MARK: - Initializer
-
+    init(router: any LaunchRoutable) {
+        self.router = router
+        
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - Lifecycle
     override func loadView() {
         view = root

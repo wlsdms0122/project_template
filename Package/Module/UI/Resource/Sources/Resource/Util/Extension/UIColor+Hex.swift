@@ -13,7 +13,6 @@ extension UIColor {
         @Range(0...255) blue: Int,
         @Range(0...1) alpha: CGFloat = 1
     ) {
-        print(red, green, blue)
         self.init(
             red: CGFloat(red) / 255,
             green: CGFloat(green) / 255,

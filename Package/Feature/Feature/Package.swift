@@ -22,7 +22,8 @@ let package = Package(
         .package(url: "https://github.com/wlsdms0122/Route.git", .upToNextMajor(from: "1.3.0")),
         .package(url: "https://github.com/wlsdms0122/Deeplinker.git", .upToNextMajor(from: "1.1.1")),
         .package(path: "../../Core/Util"),
-        .package(path: "../../Module/UI/DesignSystem")
+        .package(path: "../../Module/UI/DesignSystem"),
+        .package(path: "../../Module/Environment")
     ],
     targets: [
         .target(
@@ -35,7 +36,8 @@ let package = Package(
                 "Route",
                 "Deeplinker",
                 "Util",
-                "DesignSystem"
+                "DesignSystem",
+                "Environment"
             ]
         )
     ]

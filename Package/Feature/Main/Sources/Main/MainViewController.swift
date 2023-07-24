@@ -17,7 +17,7 @@ final class MainViewController: UIViewController, MainControllable {
     private let root = MainView()
 
     // MARK: - Property
-    private let  router: any MainRoutable
+    private let router: any MainRoutable
 
     // MARK: - Initializer
     init(router: any MainRoutable) {

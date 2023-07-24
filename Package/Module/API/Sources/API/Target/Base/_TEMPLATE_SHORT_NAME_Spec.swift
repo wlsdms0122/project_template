@@ -1,5 +1,5 @@
 //
-//  _TEMPLATE_SHORT_NAME_Target.swift
+//  _TEMPLATE_SHORT_NAME_Spec.swift
 //  
 //
 //  Created by JSilver on 2022/02/02.

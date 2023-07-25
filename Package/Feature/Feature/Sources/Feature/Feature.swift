@@ -10,3 +10,4 @@
 @_exported import Util
 @_exported import Environment
 @_exported import DesignSystem
+@_exported import Resource

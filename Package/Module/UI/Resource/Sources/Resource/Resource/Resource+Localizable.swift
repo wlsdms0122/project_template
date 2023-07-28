@@ -1,5 +1,5 @@
 //
-//  Resourece+Localizable.swift
+//  Resource+Localizable.swift
 //  
 //
 //  Created by JSilver on 2023/01/28.

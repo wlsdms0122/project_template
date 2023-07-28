@@ -12,5 +12,5 @@ public extension Resource {
 }
 
 public extension Resource.Localizable {
-    static var appName: String { "app_name".localized }
+    static var appName: String { "app_name".localized(in: .module) }
 }

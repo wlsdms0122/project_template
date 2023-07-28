@@ -1,14 +1,14 @@
 //
-//  String+Localizable.swift
-//  
+//  String+Localized.swift
 //
-//  Created by JSilver on 2023/01/28.
+//
+//  Created by JSilver on 2021/05/29.
 //
 
 import Foundation
 
-extension String {
-    var localized: String {
-        NSLocalizedString(self, bundle: .module, comment: "")
+public extension String {
+    func localized(in bundle: Bundle? = nil) -> String {
+        NSLocalizedString(self, bundle: bundle ?? .main, value: "unknown", comment: "")
     }
 }

@@ -35,3 +35,7 @@ SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG
 CODE_SIGN_IDENTITY = Apple Development
 // Probisioning profile specifier
 PROVISIONING_PROFILE_SPECIFIER = _TEMPLATE_NAME_ Develop
+
+// MARK: - User Define
+// Display name
+BUNDLE_DISPLAY_NAME = _TEMPLATE_NAME_(Dev)

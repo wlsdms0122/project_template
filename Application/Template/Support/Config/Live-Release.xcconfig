@@ -19,5 +19,3 @@ ASSETCATALOG_COMPILER_APPICON_NAME = app_icon_live
 // MARK: - Code Sign
 
 // MARK: - User Define
-// Display name
-BUNDLE_DISPLAY_NAME = _TEMPLATE_NAME_(Live)

@@ -12,9 +12,9 @@
 // Product name
 PRODUCT_NAME = _TEMPLATE_
 // Info plist file path
-INFOPLIST_FILE = $(PROJECT_NAME)/Support/Info.plist
+INFOPLIST_FILE = $(TARGETNAME)/Support/Info.plist
 // Development asset path
-DEVELOPMENT_ASSET_PATHS = ${PROJECT_NAME}/Resource/Preview\ Content.xcassets
+DEVELOPMENT_ASSET_PATHS = $(TARGETNAME)/Resource/Preview\ Content.xcassets
 // Accent color
 ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accent_color
 // Bundle identifier

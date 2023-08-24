@@ -15,7 +15,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/wlsdms0122/Logma.git", .upToNextMajor(from: "1.2.0")),
+        .package(url: "https://github.com/wlsdms0122/Logma.git", .upToNextMajor(from: "1.2.2")),
         .package(path: "../Module/Environment"),
         .package(path: "../Feature/Root")
     ],

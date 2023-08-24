@@ -15,8 +15,8 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/wlsdms0122/Logma.git", .upToNextMajor(from: "1.2.0")),
-        .package(url: "https://github.com/wlsdms0122/Dyson.git", .upToNextMajor(from: "2.0.0")),
+        .package(url: "https://github.com/wlsdms0122/Logma.git", .upToNextMajor(from: "1.2.2")),
+        .package(url: "https://github.com/wlsdms0122/Dyson.git", .upToNextMajor(from: "2.1.1")),
         .package(path: "../Environment")
     ],
     targets: [

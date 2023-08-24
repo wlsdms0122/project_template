@@ -15,10 +15,10 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/wlsdms0122/Logma.git", .upToNextMajor(from: "1.2.0")),
+        .package(url: "https://github.com/wlsdms0122/Logma.git", .upToNextMajor(from: "1.2.2")),
         .package(url: "https://github.com/wlsdms0122/RVB.git", .upToNextMajor(from: "1.1.0")),
         .package(url: "https://github.com/wlsdms0122/Reducer.git", .upToNextMajor(from: "1.3.1")),
-        .package(url: "https://github.com/wlsdms0122/Compose.git", .upToNextMajor(from: "1.5.0")),
+        .package(url: "https://github.com/wlsdms0122/Compose.git", .upToNextMajor(from: "1.6.0")),
         .package(url: "https://github.com/wlsdms0122/Route.git", .upToNextMajor(from: "1.3.0")),
         .package(url: "https://github.com/wlsdms0122/Deeplinker.git", .upToNextMajor(from: "1.1.1")),
         .package(path: "../../Core/Util"),

@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/wlsdms0122/Compose.git",
       "state" : {
-        "revision" : "7faab8d6adc1d080636defb47f7da8c7614c5e07",
-        "version" : "1.5.0"
+        "revision" : "3bb651dcc76272859f33519ddff27c0efbfd7efb",
+        "version" : "1.6.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/wlsdms0122/Dyson.git",
       "state" : {
-        "revision" : "c6b482d4974c2ece9d6c0d577eb487b9ff98e014",
-        "version" : "2.0.0"
+        "revision" : "fee4efffae04b64d247118ec574f6bdaf8f7058d",
+        "version" : "2.1.1"
       }
     },
     {
@@ -32,8 +32,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/wlsdms0122/Logma.git",
       "state" : {
-        "revision" : "7b8a6227b7cf4e9ce6398cab9c11d04f5bcca51a",
-        "version" : "1.2.0"
+        "revision" : "2d5f7163d128533f271e67d78a0ee8ff0facfbd6",
+        "version" : "1.2.2"
       }
     },
     {

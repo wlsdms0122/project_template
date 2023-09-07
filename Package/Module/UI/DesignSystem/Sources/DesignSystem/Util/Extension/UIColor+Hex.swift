@@ -6,7 +6,7 @@
 //
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     convenience init(
         @Clamp(0...255) red: Int,
         @Clamp(0...255) green: Int,

@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension String {
+public extension String {
     func localized(in bundle: Bundle? = nil) -> String {
         NSLocalizedString(self, bundle: bundle ?? .main, value: "unknown", comment: "")
     }

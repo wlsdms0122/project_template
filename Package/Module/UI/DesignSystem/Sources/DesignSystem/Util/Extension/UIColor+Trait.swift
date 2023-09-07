@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     static func traitColor(_ light: UIColor, dark: UIColor? = nil) -> UIColor {
         .init { collection in
             switch collection.userInterfaceStyle {

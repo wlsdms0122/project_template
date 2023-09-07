@@ -1,16 +1,16 @@
 //
-//  Range.swift
+//  Clamp.swift
 //
 //
-//  Created by JSilver on 2022/07/28.
+//  Created by Ricoh on 2022/07/28.
 //
 
 import Foundation
 
 @propertyWrapper
-public struct Range<T: Comparable> {
+struct Clamp<T: Comparable> {
     // MARK: - Property
-    public var wrappedValue: T {
+    var wrappedValue: T {
         didSet {
             wrappedValue = clamping(wrappedValue)
         }
@@ -19,7 +19,7 @@ public struct Range<T: Comparable> {
     private let clamping: (T) -> T
     
     // MARK: - Initializer
-    public init(wrappedValue: T, _ range: Swift.Range<T>) {
+    init(wrappedValue: T, _ range: Swift.Range<T>) {
         let clamping: (T) -> T = { value in
             max(min(value, range.upperBound), range.lowerBound)
         }
@@ -28,7 +28,7 @@ public struct Range<T: Comparable> {
         self.clamping = clamping
     }
     
-    public init(wrappedValue: T, _ range: Swift.ClosedRange<T>) {
+    init(wrappedValue: T, _ range: Swift.ClosedRange<T>) {
         let clamping: (T) -> T = { value in
             max(min(value, range.upperBound), range.lowerBound)
         }
